@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coin Catcher</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- START SCREEN -->
+
+    <div id="startScreen" class="screen">
+
+        <h1>🪙 COIN CATCHER</h1>
+
+        <p class="tagline">Catch Coins. Collect Rewards. Become a Champion!</p>
+
+        <h2>Choose Your Character</h2>
+
+        <!-- CHARACTER SELECTION -->
+
+        <div class="character-container">
+
+            <div class="character selected" data-character="🐱">
+                <span>🐱</span>
+                <h3>Kitty</h3>
+                <p>Free</p>
+            </div>
+
+            <div class="character" data-character="🐼">
+                <span>🐼</span>
+                <h3>Panda</h3>
+                <p>Free</p>
+            </div>
+
+            <div class="character" data-character="🦊">
+                <span>🦊</span>
+                <h3>Fox</h3>
+                <p>Free</p>
+            </div>
+
+            <div class="character" data-character="🦸">
+                <span>🦸</span>
+                <h3>Hero</h3>
+                <p>Locked 🔒</p>
+            </div>
+
+            <div class="character" data-character="🧙">
+                <span>🧙</span>
+                <h3>Wizard</h3>
+                <p>Locked 🔒</p>
+            </div>
+
+            <div class="character" data-character="🥷">
+                <span>🥷</span>
+                <h3>Ninja</h3>
+                <p>Locked 🔒</p>
+            </div>
+
+        </div>
+
+        <button id="startButton">START GAME ▶</button>
+
+        <p class="instructions">
+            Controls: ← → or A / D
+        </p>
+
+    </div>
+
+
+    <!-- GAME SCREEN -->
+
+    <div id="gameScreen" class="screen" hidden>
+
+        <h1>🪙 COIN CATCHER</h1>
+
+        <div class="scoreboard">
+
+            <span>Score: <span id="score">0</span></span>
+
+            <span>Lives: <span id="lives">3</span></span>
+
+        </div>
+
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+        <p>Use ← → or A / D to move your character.</p>
+
+        <button id="restartButton" hidden>Play Again</button>
+
+        <button id="homeButton">Home</button>
+
+    </div>
+
+</body>
+
+</html>
